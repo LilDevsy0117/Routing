@@ -68,6 +68,17 @@ a {
 .space{
 	width : 20px;
 }
+
+.map_container{
+	display : flex;
+	margin-top : 50px;
+}
+
+.map {
+   width: 50%;
+   height:400px;
+}
+
 @media screen and (max-width: 768px){
 	.navbar {
 		flex-direction: column;
