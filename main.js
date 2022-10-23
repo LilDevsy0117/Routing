@@ -14,7 +14,6 @@ $(document).ready(function() {
 });
 
 function init() {
-
 	// map 생성
 	var map1 = new ol.Map({
 		layers: [
@@ -24,11 +23,10 @@ function init() {
 		],
 		target: 'map1',                          // Map 생성할 div id
 		view: new ol.View({
-			center: [54200000, 4300000],        // 초기 지도 위치 좌표
-			zoom: 6                             // 초기 지도 위치 줌레벨
+			center: [54300000, 4350000],        // 초기 지도 위치 좌표
+			zoom: 7                             // 초기 지도 위치 줌레벨
 		})
 	});
-
 	var map2 = new ol.Map({
 		layers: [
 			new ol.layer.Tile({
@@ -37,17 +35,21 @@ function init() {
 		],
 		target: 'map2',                          // Map 생성할 div id
 		view: new ol.View({
-			center: [54200000, 4300000],        // 초기 지도 위치 좌표
-			zoom: 6                             // 초기 지도 위치 줌레벨
+			center: [54300000, 4350000],        // 초기 지도 위치 좌표
+			zoom: 7                             // 초기 지도 위치 줌레벨
 		})
 	});
 	// 레이어 추가
-	/*
+	
 	var osmLayer = new ol.layer.Tile({
 		source: new ol.source.OSM()
 	});
-	map.addLayer(osmLayer);
-	*/
-
+	map1.addLayer(osmLayer);
+	
+	var osmLayer = new ol.layer.Tile({
+	source: new ol.source.OSM()
+	});
+	map2.addLayer(osmLayer);
+	
 }
 
