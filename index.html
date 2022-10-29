@@ -30,48 +30,46 @@
 			<li><a href="#">Schedulinig</a></li>
 			<li><a href="#">Etc</a></li>
 		</ul>
-		
 		<a href="#" class="navbar__toggleBtn">
 			<i class="fa-solid fa-bars"></i>
 		</a>
 	</nav>
 	<div class="container">
 		<div id="option" class="container">
-			<div id="1op" class="opt">
+			<div class="opt">
 				<label>출발 지점</label>
-				<select class="my-select selectpicker" data-container="body" data-width = "fit">
+				<select id="start" class="my-select selectpicker" data-container="body" data-width = "fit">
 				  <option>1보급단</option>
 				  <option>2보급단</option>
 				  <option>3보급단</option>
 				</select>
 				<div class="space"></div>
 				<label>경유 지점</label>
-				<select class="selectpicker" data-live-search="true" data-container="body" multiple data-width = "fit">
-				  <option data-tokens="ketchup mustard">test 부대 1</option>
-			      <option data-tokens="mustard">test 부대 2</option>
-				  <option data-tokens="frosting">test 부대 3</option>
+				<select id="via" class="selectpicker" data-live-search="true" data-container="body" multiple data-width = "fit" >
+				  <option data-tokens="1">test 부대 1</option>
+			      <option data-tokens="2">test 부대 2</option>
+				  <option data-tokens="3">test 부대 3</option>
 			    </select>
 			</div>
-			<div id ="2op" class="opt">
-				<label>출발 지점</label>
-				<select class="my-select selectpicker" data-container="body" data-width = "fit">
-				  <option>1보급단</option>
-				  <option>2보급단</option>
-				  <option>3보급단</option>
+			<div class="space"></div>
+			<div class="opt">
+				<label>크로스 도킹</label>
+				<select id="cross" class="my-select selectpicker" data-container="body" multiple data-width = "fit">
+				  <option>test 부대 1</option>
+				  <option>test 부대 2</option>
+				  <option>test 부대 3</option>
 				</select>
 				<div class="space"></div>
-				<label>경유 지점</label>
-				<select class="selectpicker" data-live-search="true" data-container="body" multiple data-width = "fit">
-				  <option data-tokens="ketchup mustard">test 부대 1</option>
-			      <option data-tokens="mustard">test 부대 2</option>
-				  <option data-tokens="frosting">test 부대 3</option>
+				<label>차량 무게</label>
+				<select id="weight" class="selectpicker" data-live-search="true" data-container="body"  data-width = "fit">
+				  <option data-tokens="1">5kg</option>
+			      <option data-tokens="2">9kg</option>
+				  <option data-tokens="3">11kg</option>
 			    </select>		
 			</div>
 		</div>
 		<div class="map_container">
-			<div id="map1" class="map"></div>
-			<div class="space"></div>
-			<div id="map2" class="map"></div>
+			<div id="map" class="map"></div>
 		</div>
 	</div>
 	  
