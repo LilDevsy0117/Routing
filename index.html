@@ -38,37 +38,37 @@
 		<div id="option" class="container">
 			<div class="opt">
 				<label>출발 지점</label>
-				<select id="start" class="my-select selectpicker" data-container="body" data-width = "fit">
-				  <option>1보급단</option>
-				  <option>2보급단</option>
-				  <option>3보급단</option>
+				<select id="start" class="selectpicker" data-container="body" data-width = "fit">
+				  <option value="1">1보급단</option>
+				  <option value="2">2보급단</option>
+				  <option value="3">3보급단</option>
 				</select>
 				<div class="space"></div>
 				<label>경유 지점</label>
 				<select id="via" class="selectpicker" data-live-search="true" data-container="body" multiple data-width = "fit" >
-				  <option data-tokens="1">test 부대 1</option>
-			      <option data-tokens="2">test 부대 2</option>
-				  <option data-tokens="3">test 부대 3</option>
+				  <option value="1">test 부대 1</option>
+			      <option value="2">test 부대 2</option>
+				  <option value="3">test 부대 3</option>
 			    </select>
 			</div>
 			<div class="space"></div>
 			<div class="opt">
 				<label>크로스 도킹</label>
-				<select id="cross" class="my-select selectpicker" data-container="body" multiple data-width = "fit">
-				  <option>test 부대 1</option>
-				  <option>test 부대 2</option>
-				  <option>test 부대 3</option>
+				<select id="cross" class="selectpicker" data-live-search="true" data-container="body" multiple data-width = "fit">
+				  <option value="1">test 부대 1</option>
+				  <option value="2">test 부대 2</option>
+				  <option value="3">test 부대 3</option>
 				</select>
 				<div class="space"></div>
 				<label>차량 무게</label>
-				<select id="weight" class="selectpicker" data-live-search="true" data-container="body"  data-width = "fit">
-				  <option data-tokens="1">5kg</option>
-			      <option data-tokens="2">9kg</option>
-				  <option data-tokens="3">11kg</option>
+				<select id="weight" class="selectpicker"  data-container="body"  data-width = "fit">
+				  <option value="5">5kg</option>
+			      <option value="9">9kg</option>
+				  <option value="11">11kg</option>
 			    </select>		
 			</div>
 			<div class="space"></div>
-			<button type="button" class="btn btn-outline-primary">Routing</button>
+			<button type="button" class="btn btn-outline-primary" onclick="routing()">Routing</button>
 		</div>
 		<div class="map_container">
 			<div id="map" class="map"></div>

@@ -8,7 +8,27 @@ toggleBtn.addEventListener('click', () => {
 $('#lang').selectpicker();
 
 
-console.log($("#via option:selected").val());
+function routing(){
+	console.log($("#start option:selected").val());
+	var selected = [];
+	for(var option of document.getElementById('via').options){
+		if(option.selected){
+			selected.push(option.value);
+		}
+	}
+	console.log(selected);
+	var selected = [];
+	for(var option of document.getElementById('cross').options){
+		if(option.selected){
+			selected.push(option.value);
+		}
+	}
+	console.log(selected);
+	
+	console.log($("#weight option:selected").val());
+}
+
+
 
 
 
